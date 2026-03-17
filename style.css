@@ -276,3 +276,95 @@ main {
 .sound-settings select option {
     background: var(--rock-dark);
 }
+
+/* Responsive untuk tablet dan HP */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gold-display {
+        font-size: 1.4rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .gold-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sound-settings {
+        margin-left: 0;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .sound-settings select {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.4rem;
+        max-width: 150px; /* batasi lebar dropdown */
+    }
+
+    .character-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .lahan-container {
+        grid-template-columns: 1fr; /* satu kolom di HP */
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .modal-foto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Untuk HP kecil (max-width 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .gold-display {
+        justify-content: center;
+    }
+
+    .sound-settings {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .character-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .click-info {
+        font-size: 1rem;
+    }
+
+    .lahan-card {
+        padding: 1rem;
+    }
+
+    .lahan-header {
+        font-size: 1.1rem;
+    }
+
+    #beli-lahan-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
