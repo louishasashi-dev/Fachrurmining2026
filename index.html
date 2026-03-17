@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>FACHRUR MINING 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="gold-display">
+                <img src="assets/image/komponen/emas.png" alt="Gold" class="gold-icon">
+                <span id="gold-amount">0</span>
+            </div>
+            <div class="sound-settings">
+                <label for="sound-select">🔊 Suara Mining:</label>
+                <select id="sound-select">
+                    <!-- akan diisi oleh JavaScript -->
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mining-area">
+            <div class="character-container">
+                <img src="assets/image/karakter/fachrur_animate_1-removebg-preview.png" alt="Penambang" id="character-img" class="character-img">
+                <p class="click-info">Klik / Tap untuk menambang!</p>
+            </div>
+            <div class="lahan-container" id="lahan-container">
+                <!-- Lahan akan di-generate oleh JavaScript -->
+            </div>
+            <button id="beli-lahan-btn" class="btn" disabled>Beli Lahan Baru (1000 Gold) - Lahan sebelumnya harus level 10</button>
+        </div>
+    </main>
+
+    <!-- Modal Drama -->
+    <div id="drama-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="" alt="Tokoh" id="modal-foto" class="modal-foto">
+                <h2 id="modal-nama"></h2>
+            </div>
+            <p id="modal-dialog"></p>
+            <div class="modal-options" id="modal-options">
+                <!-- Tombol akan diisi dinamis -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
